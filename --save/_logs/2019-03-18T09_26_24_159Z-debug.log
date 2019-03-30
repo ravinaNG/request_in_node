@@ -1,0 +1,55 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--no-save',
+1 verbose cli   'node-linux-x64@11.12.0' ]
+2 info using npm@6.8.0
+3 info using node@v11.10.0
+4 verbose npm-session 56c14a97bc1ce5cb
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 http fetch GET 200 https://registry.npmjs.org/node-linux-x64 308ms
+8 silly pacote version manifest for node-linux-x64@11.12.0 fetched in 340ms
+9 timing stage:loadCurrentTree Completed in 381ms
+10 silly install loadIdealTree
+11 silly install cloneCurrentTreeToIdealTree
+12 timing stage:loadIdealTree:cloneCurrentTree Completed in 0ms
+13 silly install loadShrinkwrap
+14 timing stage:loadIdealTree:loadShrinkwrap Completed in 1ms
+15 silly install loadAllDepsIntoIdealTree
+16 silly resolveWithNewModule node-linux-x64@11.12.0 checking installable status
+17 timing stage:loadIdealTree:loadAllDepsIntoIdealTree Completed in 4ms
+18 timing stage:loadIdealTree Completed in 7ms
+19 silly currentTree node@11.12.0
+20 silly idealTree node@11.12.0
+20 silly idealTree `-- node-linux-x64@11.12.0
+21 silly install generateActionsToTake
+22 warn checkPermissions Missing write access to /home/ravina/Node_js/request_in_node/node_modules/node
+23 timing stage:rollbackFailedOptional Completed in 1ms
+24 timing stage:runTopLevelLifecycles Completed in 395ms
+25 verbose stack Error: EACCES: permission denied, access '/home/ravina/Node_js/request_in_node/node_modules/node'
+26 verbose cwd /home/ravina/Node_js/request_in_node/node_modules/node
+27 verbose Linux 4.18.0-16-generic
+28 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--no-save" "node-linux-x64@11.12.0"
+29 verbose node v11.10.0
+30 verbose npm  v6.8.0
+31 error path /home/ravina/Node_js/request_in_node/node_modules/node
+32 error code EACCES
+33 error errno -13
+34 error syscall access
+35 error Error: EACCES: permission denied, access '/home/ravina/Node_js/request_in_node/node_modules/node'
+35 error  { [Error: EACCES: permission denied, access '/home/ravina/Node_js/request_in_node/node_modules/node']
+35 error   stack:
+35 error    "Error: EACCES: permission denied, access '/home/ravina/Node_js/request_in_node/node_modules/node'",
+35 error   errno: -13,
+35 error   code: 'EACCES',
+35 error   syscall: 'access',
+35 error   path: '/home/ravina/Node_js/request_in_node/node_modules/node' }
+36 error The operation was rejected by your operating system.
+36 error It is likely you do not have the permissions to access this file as the current user
+36 error
+36 error If you believe this might be a permissions issue, please double-check the
+36 error permissions of the file and its containing directories, or try running
+36 error the command again as root/Administrator (though this is not recommended).
+37 verbose exit [ -13, true ]

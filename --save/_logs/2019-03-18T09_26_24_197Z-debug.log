@@ -1,0 +1,146 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'node',
+1 verbose cli   '-cache',
+1 verbose cli   '--save' ]
+2 info using npm@6.8.0
+3 info using node@v11.10.0
+4 verbose npm-session bd53cc4feca9f52b
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 http fetch GET 200 https://registry.npmjs.org/node 18ms (from cache)
+8 silly pacote tag manifest for node@latest fetched in 30ms
+9 timing stage:loadCurrentTree Completed in 81ms
+10 silly install loadIdealTree
+11 silly install cloneCurrentTreeToIdealTree
+12 timing stage:loadIdealTree:cloneCurrentTree Completed in 0ms
+13 silly install loadShrinkwrap
+14 timing stage:loadIdealTree:loadShrinkwrap Completed in 16ms
+15 silly install loadAllDepsIntoIdealTree
+16 silly resolveWithNewModule node@11.12.0 checking installable status
+17 http fetch GET 200 https://registry.npmjs.org/node-bin-setup 11ms (from cache)
+18 silly pacote range manifest for node-bin-setup@^1.0.0 fetched in 13ms
+19 silly resolveWithNewModule node-bin-setup@1.0.6 checking installable status
+20 timing stage:loadIdealTree:loadAllDepsIntoIdealTree Completed in 26ms
+21 timing stage:loadIdealTree Completed in 47ms
+22 silly currentTree request_in_node@1.0.0
+22 silly currentTree +-- axios@0.18.0
+22 silly currentTree +-- debug@3.2.6
+22 silly currentTree +-- follow-redirects@1.7.0
+22 silly currentTree +-- is-buffer@1.1.6
+22 silly currentTree +-- ms@2.1.1
+22 silly currentTree +-- readline-sync@1.4.9
+22 silly currentTree `-- readline@1.3.0
+23 silly idealTree request_in_node@1.0.0
+23 silly idealTree +-- axios@0.18.0
+23 silly idealTree +-- debug@3.2.6
+23 silly idealTree +-- follow-redirects@1.7.0
+23 silly idealTree +-- is-buffer@1.1.6
+23 silly idealTree +-- ms@2.1.1
+23 silly idealTree +-- node-bin-setup@1.0.6
+23 silly idealTree +-- node@11.12.0
+23 silly idealTree +-- readline-sync@1.4.9
+23 silly idealTree `-- readline@1.3.0
+24 silly install generateActionsToTake
+25 timing stage:generateActionsToTake Completed in 5ms
+26 silly diffTrees action count 2
+27 silly diffTrees add node-bin-setup@1.0.6
+28 silly diffTrees add node@11.12.0
+29 silly decomposeActions action count 16
+30 silly decomposeActions fetch node-bin-setup@1.0.6
+31 silly decomposeActions extract node-bin-setup@1.0.6
+32 silly decomposeActions preinstall node-bin-setup@1.0.6
+33 silly decomposeActions build node-bin-setup@1.0.6
+34 silly decomposeActions install node-bin-setup@1.0.6
+35 silly decomposeActions postinstall node-bin-setup@1.0.6
+36 silly decomposeActions finalize node-bin-setup@1.0.6
+37 silly decomposeActions refresh-package-json node-bin-setup@1.0.6
+38 silly decomposeActions fetch node@11.12.0
+39 silly decomposeActions extract node@11.12.0
+40 silly decomposeActions preinstall node@11.12.0
+41 silly decomposeActions build node@11.12.0
+42 silly decomposeActions install node@11.12.0
+43 silly decomposeActions postinstall node@11.12.0
+44 silly decomposeActions finalize node@11.12.0
+45 silly decomposeActions refresh-package-json node@11.12.0
+46 silly install executeActions
+47 silly doSerial global-install 16
+48 verbose correctMkdir /home/ravina/Node_js/request_in_node/--save/_locks correctMkdir not in flight; initializing
+49 verbose makeDirectory /home/ravina/Node_js/request_in_node/--save/_locks creation not in flight; initializing
+50 silly makeDirectory /home/ravina/Node_js/request_in_node/--save/_locks uid: 1000 gid: 1000
+51 verbose lock using /home/ravina/Node_js/request_in_node/--save/_locks/staging-05f7dfaefd683cc4.lock for /home/ravina/Node_js/request_in_node/node_modules/.staging
+52 silly doParallel extract 2
+53 silly extract node-bin-setup@1.0.6
+54 silly extract node@11.12.0
+55 silly tarball trying node-bin-setup@^1.0.0 by hash: sha512-uPIxXNis1CRbv1DwqAxkgBk5NFV3s7cMN/Gf556jSw6jBvV7ca4F9lRL/8cALcZecRibeqU+5dFYqFFmzv5a0Q==
+56 silly tarball trying node@latest by hash: sha512-um2HVV67QzgmYnfrT6XszwwUT7S/i5nzIls68jEYOfVFJye+0ta2leda2ZWYUHzAajbUYyMp312v+1yYh0Jixw==
+57 silly tarball no local data for node-bin-setup@^1.0.0. Extracting by manifest.
+58 silly tarball no local data for node@latest. Extracting by manifest.
+59 http fetch GET 200 https://registry.npmjs.org/node/-/node-11.12.0.tgz 227ms
+60 http fetch GET 200 https://registry.npmjs.org/node-bin-setup/-/node-bin-setup-1.0.6.tgz 230ms
+61 silly extract node@latest extracted to /home/ravina/Node_js/request_in_node/node_modules/.staging/node-f6adc87c (238ms)
+62 silly extract node-bin-setup@^1.0.0 extracted to /home/ravina/Node_js/request_in_node/node_modules/.staging/node-bin-setup-1d4d96f9 (241ms)
+63 timing action:extract Completed in 245ms
+64 silly doReverseSerial unbuild 16
+65 silly doSerial remove 16
+66 silly doSerial move 16
+67 silly doSerial finalize 16
+68 silly finalize /home/ravina/Node_js/request_in_node/node_modules/node-bin-setup
+69 silly finalize /home/ravina/Node_js/request_in_node/node_modules/node
+70 timing action:finalize Completed in 11ms
+71 silly doParallel refresh-package-json 2
+72 silly refresh-package-json /home/ravina/Node_js/request_in_node/node_modules/node-bin-setup
+73 silly refresh-package-json /home/ravina/Node_js/request_in_node/node_modules/node
+74 timing action:refresh-package-json Completed in 19ms
+75 silly doParallel preinstall 2
+76 silly preinstall node-bin-setup@1.0.6
+77 info lifecycle node-bin-setup@1.0.6~preinstall: node-bin-setup@1.0.6
+78 silly preinstall node@11.12.0
+79 info lifecycle node@11.12.0~preinstall: node@11.12.0
+80 verbose lifecycle node@11.12.0~preinstall: unsafe-perm in lifecycle false
+81 verbose lifecycle node@11.12.0~preinstall: PATH: /usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/home/ravina/Node_js/request_in_node/node_modules/node/node_modules/.bin:/home/ravina/Node_js/request_in_node/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+82 verbose lifecycle node@11.12.0~preinstall: CWD: /home/ravina/Node_js/request_in_node/node_modules/node
+83 silly lifecycle node@11.12.0~preinstall: Args: [ '-c', 'node installArchSpecificPackage' ]
+84 timing audit submit Completed in 765ms
+85 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/audits/quick 765ms
+86 timing audit body Completed in 0ms
+87 silly lifecycle node@11.12.0~preinstall: Returned: code: 1  signal: null
+88 info lifecycle node@11.12.0~preinstall: Failed to exec preinstall script
+89 timing action:preinstall Completed in 1040ms
+90 verbose unlock done using /home/ravina/Node_js/request_in_node/--save/_locks/staging-05f7dfaefd683cc4.lock for /home/ravina/Node_js/request_in_node/node_modules/.staging
+91 timing stage:rollbackFailedOptional Completed in 6ms
+92 timing stage:runTopLevelLifecycles Completed in 1514ms
+93 silly saveTree request_in_node@1.0.0
+93 silly saveTree +-- axios@0.18.0
+93 silly saveTree | +-- follow-redirects@1.7.0
+93 silly saveTree | | `-- debug@3.2.6
+93 silly saveTree | |   `-- ms@2.1.1
+93 silly saveTree | `-- is-buffer@1.1.6
+93 silly saveTree +-- node@11.12.0
+93 silly saveTree | `-- node-bin-setup@1.0.6
+93 silly saveTree +-- readline-sync@1.4.9
+93 silly saveTree `-- readline@1.3.0
+94 warn request_in_node@1.0.0 No repository field.
+95 verbose stack Error: node@11.12.0 preinstall: `node installArchSpecificPackage`
+95 verbose stack Exit status 1
+95 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/index.js:301:16)
+95 verbose stack     at EventEmitter.emit (events.js:197:13)
+95 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/lib/spawn.js:55:14)
+95 verbose stack     at ChildProcess.emit (events.js:197:13)
+95 verbose stack     at maybeClose (internal/child_process.js:984:16)
+95 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:265:5)
+96 verbose pkgid node@11.12.0
+97 verbose cwd /home/ravina/Node_js/request_in_node
+98 verbose Linux 4.18.0-16-generic
+99 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "node" "-cache" "--save"
+100 verbose node v11.10.0
+101 verbose npm  v6.8.0
+102 error code ELIFECYCLE
+103 error errno 1
+104 error node@11.12.0 preinstall: `node installArchSpecificPackage`
+104 error Exit status 1
+105 error Failed at the node@11.12.0 preinstall script.
+105 error This is probably not a problem with npm. There is likely additional logging output above.
+106 verbose exit [ 1, true ]

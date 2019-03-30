@@ -1,0 +1,85 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'node',
+1 verbose cli   '-cache',
+1 verbose cli   '--save' ]
+2 info using npm@6.8.0
+3 info using node@v11.10.0
+4 verbose npm-session fce7a067e29cdf1c
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 http fetch GET 200 https://registry.npmjs.org/node 374ms
+8 silly pacote tag manifest for node@latest fetched in 401ms
+9 timing stage:loadCurrentTree Completed in 455ms
+10 silly install loadIdealTree
+11 silly install cloneCurrentTreeToIdealTree
+12 timing stage:loadIdealTree:cloneCurrentTree Completed in 1ms
+13 silly install loadShrinkwrap
+14 timing stage:loadIdealTree:loadShrinkwrap Completed in 19ms
+15 silly install loadAllDepsIntoIdealTree
+16 silly resolveWithNewModule node@11.12.0 checking installable status
+17 http fetch GET 200 https://registry.npmjs.org/node-bin-setup 165ms
+18 silly pacote range manifest for node-bin-setup@^1.0.0 fetched in 170ms
+19 silly resolveWithNewModule node-bin-setup@1.0.6 checking installable status
+20 timing stage:loadIdealTree:loadAllDepsIntoIdealTree Completed in 189ms
+21 timing stage:loadIdealTree Completed in 213ms
+22 silly currentTree request_in_node@1.0.0
+22 silly currentTree +-- axios@0.18.0
+22 silly currentTree +-- debug@3.2.6
+22 silly currentTree +-- follow-redirects@1.7.0
+22 silly currentTree +-- is-buffer@1.1.6
+22 silly currentTree +-- ms@2.1.1
+22 silly currentTree +-- readline-sync@1.4.9
+22 silly currentTree `-- readline@1.3.0
+23 silly idealTree request_in_node@1.0.0
+23 silly idealTree +-- axios@0.18.0
+23 silly idealTree +-- debug@3.2.6
+23 silly idealTree +-- follow-redirects@1.7.0
+23 silly idealTree +-- is-buffer@1.1.6
+23 silly idealTree +-- ms@2.1.1
+23 silly idealTree +-- node-bin-setup@1.0.6
+23 silly idealTree +-- node@11.12.0
+23 silly idealTree +-- readline-sync@1.4.9
+23 silly idealTree `-- readline@1.3.0
+24 silly install generateActionsToTake
+25 warn checkPermissions Missing write access to /home/ravina/Node_js/request_in_node/node_modules
+26 timing stage:rollbackFailedOptional Completed in 0ms
+27 timing stage:runTopLevelLifecycles Completed in 675ms
+28 silly saveTree request_in_node@1.0.0
+28 silly saveTree +-- axios@0.18.0
+28 silly saveTree | +-- follow-redirects@1.7.0
+28 silly saveTree | | `-- debug@3.2.6
+28 silly saveTree | |   `-- ms@2.1.1
+28 silly saveTree | `-- is-buffer@1.1.6
+28 silly saveTree +-- node@11.12.0
+28 silly saveTree | `-- node-bin-setup@1.0.6
+28 silly saveTree +-- readline-sync@1.4.9
+28 silly saveTree `-- readline@1.3.0
+29 warn request_in_node@1.0.0 No repository field.
+30 verbose stack Error: EACCES: permission denied, access '/home/ravina/Node_js/request_in_node/node_modules'
+31 verbose cwd /home/ravina/Node_js/request_in_node
+32 verbose Linux 4.18.0-16-generic
+33 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "node" "-cache" "--save"
+34 verbose node v11.10.0
+35 verbose npm  v6.8.0
+36 error path /home/ravina/Node_js/request_in_node/node_modules
+37 error code EACCES
+38 error errno -13
+39 error syscall access
+40 error Error: EACCES: permission denied, access '/home/ravina/Node_js/request_in_node/node_modules'
+40 error  { [Error: EACCES: permission denied, access '/home/ravina/Node_js/request_in_node/node_modules']
+40 error   stack:
+40 error    "Error: EACCES: permission denied, access '/home/ravina/Node_js/request_in_node/node_modules'",
+40 error   errno: -13,
+40 error   code: 'EACCES',
+40 error   syscall: 'access',
+40 error   path: '/home/ravina/Node_js/request_in_node/node_modules' }
+41 error The operation was rejected by your operating system.
+41 error It is likely you do not have the permissions to access this file as the current user
+41 error
+41 error If you believe this might be a permissions issue, please double-check the
+41 error permissions of the file and its containing directories, or try running
+41 error the command again as root/Administrator (though this is not recommended).
+42 verbose exit [ -13, true ]
